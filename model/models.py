@@ -1,4 +1,4 @@
-# models.py
+# models.py  数据库模型 用于被调用方
 
 from sqlalchemy import Column, String, Integer
 

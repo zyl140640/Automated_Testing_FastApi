@@ -1,11 +1,12 @@
+import logging.config
 import os
 
 import uvicorn
-from fastapi import FastAPI
+from fastapi import FastAPI, Request, Response
 from starlette.middleware.cors import CORSMiddleware
-import logging.config
+
 from model import models
-from model.database import engine
+from model.database import engine, SessionLocal
 from routers.Project import project
 from routers.TestCase import testcase
 from routers.TestStep import teststep
@@ -16,6 +17,18 @@ logging.config.fileConfig(fname=os.path.join(os.path.dirname(os.path.abspath(__f
                           disable_existing_loggers=False)
 
 app = FastAPI()
+
+
+@app.middleware("http")
+async def db_session_middleware(request: Request, call_next):
+    response = Response("Internal server error", status_code=500)
+    try:
+        request.state.db = SessionLocal()
+        response = await call_next(request)
+    finally:
+        request.state.db.close()
+    return response
+
 
 # 解决跨域问题允许所有人访问
 app.add_middleware(
