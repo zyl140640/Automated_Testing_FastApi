@@ -17,4 +17,8 @@ class Project(BaseModel):
 class ProjectCreate(Project):
     pass
 
+
+class ProjectUpdate(Project):
+    pass
+
 # 响应模型

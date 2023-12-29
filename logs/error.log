@@ -2677,3 +2677,961 @@ AttributeError: 'str' object has no attribute 'query'
 [2023-12-29 13:47:19] INFO uvicorn.error shutdown() L65   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L65   in on: Waiting for application shutdown.
 [2023-12-29 13:47:19] INFO uvicorn.error shutdown() L76   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L76   in on: Application shutdown complete.
 [2023-12-29 13:47:19] INFO uvicorn.error serve() L86   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\server.py L86   in server: Finished server process [22508]
+[2023-12-29 14:58:28] INFO uvicorn.error serve() L76   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\server.py L76   in server: Started server process [16196]
+[2023-12-29 14:58:28] INFO uvicorn.error startup() L46   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L46   in on: Waiting for application startup.
+[2023-12-29 14:58:28] INFO uvicorn.error startup() L60   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L60   in on: Application startup complete.
+[2023-12-29 15:23:46] INFO uvicorn.error shutdown() L264  call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\server.py L264  in server: Shutting down
+[2023-12-29 15:23:46] INFO uvicorn.error shutdown() L65   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L65   in on: Waiting for application shutdown.
+[2023-12-29 15:23:46] INFO uvicorn.error shutdown() L76   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L76   in on: Application shutdown complete.
+[2023-12-29 15:23:46] INFO uvicorn.error serve() L86   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\server.py L86   in server: Finished server process [16196]
+[2023-12-29 15:23:49] INFO uvicorn.error serve() L76   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\server.py L76   in server: Started server process [21456]
+[2023-12-29 15:23:49] INFO uvicorn.error startup() L46   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L46   in on: Waiting for application startup.
+[2023-12-29 15:23:49] INFO uvicorn.error startup() L60   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L60   in on: Application startup complete.
+[2023-12-29 15:25:55] INFO uvicorn.error shutdown() L264  call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\server.py L264  in server: Shutting down
+[2023-12-29 15:25:55] INFO uvicorn.error shutdown() L65   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L65   in on: Waiting for application shutdown.
+[2023-12-29 15:25:55] INFO uvicorn.error shutdown() L76   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L76   in on: Application shutdown complete.
+[2023-12-29 15:25:55] INFO uvicorn.error serve() L86   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\server.py L86   in server: Finished server process [21456]
+[2023-12-29 15:25:58] INFO uvicorn.error serve() L76   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\server.py L76   in server: Started server process [23276]
+[2023-12-29 15:25:58] INFO uvicorn.error startup() L46   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L46   in on: Waiting for application startup.
+[2023-12-29 15:25:58] INFO uvicorn.error startup() L60   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L60   in on: Application startup complete.
+[2023-12-29 15:26:29] ERROR uvicorn.error run_asgi() L431  call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py L431  in httptools_impl: Exception in ASGI application
+  + Exception Group Traceback (most recent call last):
+  |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_utils.py", line 82, in collapse_excgroups
+  |     yield
+  |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 190, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 678, in __aexit__
+  |     raise BaseExceptionGroup(
+  | exceptiongroup.ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 426, in run_asgi
+    |     result = await app(  # type: ignore[func-returns-value]
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 84, in __call__
+    |     return await self.app(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    |     await super().__call__(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\applications.py", line 116, in __call__
+    |     await self.middleware_stack(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    |     raise exc
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    |     await self.app(scope, receive, _send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\cors.py", line 91, in __call__
+    |     await self.simple_response(scope, receive, send, request_headers=headers)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\cors.py", line 146, in simple_response
+    |     await self.app(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 189, in __call__
+    |     with collapse_excgroups():
+    |   File "C:\Users\Thinkpad\AppData\Local\Programs\Python\Python310\lib\contextlib.py", line 153, in __exit__
+    |     self.gen.throw(typ, value, traceback)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_utils.py", line 88, in collapse_excgroups
+    |     raise exc
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |   File "D:\Project\Automated_Testing_FastApi\main.py", line 27, in db_session_middleware
+    |     response = await call_next(request)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    |     raise app_exc
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 55, in wrapped_app
+    |     raise exc
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 44, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 746, in __call__
+    |     await route.handle(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 288, in handle
+    |     await self.app(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 75, in app
+    |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 55, in wrapped_app
+    |     raise exc
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 44, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 70, in app
+    |     response = await func(request)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 299, in app
+    |     raise e
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 294, in app
+    |     raw_response = await run_endpoint_function(
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 193, in run_endpoint_function
+    |     return await run_in_threadpool(dependant.call, **values)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\concurrency.py", line 35, in run_in_threadpool
+    |     return await anyio.to_thread.run_sync(func, *args)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    |     return await get_async_backend().run_sync_in_worker_thread(
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 2134, in run_sync_in_worker_thread
+    |     return await future
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 851, in run
+    |     result = context.run(func, *args)
+    |   File "D:\Project\Automated_Testing_FastApi\routers\Project.py", line 33, in create_projects
+    |     db_project = update_project(db,project)
+    |   File "D:\Project\Automated_Testing_FastApi\model\curd.py", line 45, in update_project
+    |     db_project = db.query(models.Project).filter_by(id=project.id).first()
+    | AttributeError: 'APIRouter' object has no attribute 'id'
+    +------------------------------------
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 426, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\applications.py", line 116, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\cors.py", line 146, in simple_response
+    await self.app(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 189, in __call__
+    with collapse_excgroups():
+  File "C:\Users\Thinkpad\AppData\Local\Programs\Python\Python310\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_utils.py", line 88, in collapse_excgroups
+    raise exc
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    response = await self.dispatch_func(request, call_next)
+  File "D:\Project\Automated_Testing_FastApi\main.py", line 27, in db_session_middleware
+    response = await call_next(request)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    raise app_exc
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 55, in wrapped_app
+    raise exc
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 44, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 746, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 75, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 55, in wrapped_app
+    raise exc
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 44, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 70, in app
+    response = await func(request)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 299, in app
+    raise e
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 294, in app
+    raw_response = await run_endpoint_function(
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\concurrency.py", line 35, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 2134, in run_sync_in_worker_thread
+    return await future
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 851, in run
+    result = context.run(func, *args)
+  File "D:\Project\Automated_Testing_FastApi\routers\Project.py", line 33, in create_projects
+    db_project = update_project(db,project)
+  File "D:\Project\Automated_Testing_FastApi\model\curd.py", line 45, in update_project
+    db_project = db.query(models.Project).filter_by(id=project.id).first()
+AttributeError: 'APIRouter' object has no attribute 'id'
+[2023-12-29 15:26:32] ERROR uvicorn.error run_asgi() L431  call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py L431  in httptools_impl: Exception in ASGI application
+  + Exception Group Traceback (most recent call last):
+  |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_utils.py", line 82, in collapse_excgroups
+  |     yield
+  |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 190, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 678, in __aexit__
+  |     raise BaseExceptionGroup(
+  | exceptiongroup.ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 426, in run_asgi
+    |     result = await app(  # type: ignore[func-returns-value]
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 84, in __call__
+    |     return await self.app(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    |     await super().__call__(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\applications.py", line 116, in __call__
+    |     await self.middleware_stack(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    |     raise exc
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    |     await self.app(scope, receive, _send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\cors.py", line 91, in __call__
+    |     await self.simple_response(scope, receive, send, request_headers=headers)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\cors.py", line 146, in simple_response
+    |     await self.app(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 189, in __call__
+    |     with collapse_excgroups():
+    |   File "C:\Users\Thinkpad\AppData\Local\Programs\Python\Python310\lib\contextlib.py", line 153, in __exit__
+    |     self.gen.throw(typ, value, traceback)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_utils.py", line 88, in collapse_excgroups
+    |     raise exc
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |   File "D:\Project\Automated_Testing_FastApi\main.py", line 27, in db_session_middleware
+    |     response = await call_next(request)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    |     raise app_exc
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 55, in wrapped_app
+    |     raise exc
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 44, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 746, in __call__
+    |     await route.handle(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 288, in handle
+    |     await self.app(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 75, in app
+    |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 55, in wrapped_app
+    |     raise exc
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 44, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 70, in app
+    |     response = await func(request)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 299, in app
+    |     raise e
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 294, in app
+    |     raw_response = await run_endpoint_function(
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 193, in run_endpoint_function
+    |     return await run_in_threadpool(dependant.call, **values)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\concurrency.py", line 35, in run_in_threadpool
+    |     return await anyio.to_thread.run_sync(func, *args)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    |     return await get_async_backend().run_sync_in_worker_thread(
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 2134, in run_sync_in_worker_thread
+    |     return await future
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 851, in run
+    |     result = context.run(func, *args)
+    |   File "D:\Project\Automated_Testing_FastApi\routers\Project.py", line 33, in create_projects
+    |     db_project = update_project(db,project)
+    |   File "D:\Project\Automated_Testing_FastApi\model\curd.py", line 45, in update_project
+    |     db_project = db.query(models.Project).filter_by(id=project.id).first()
+    | AttributeError: 'APIRouter' object has no attribute 'id'
+    +------------------------------------
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 426, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\applications.py", line 116, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\cors.py", line 146, in simple_response
+    await self.app(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 189, in __call__
+    with collapse_excgroups():
+  File "C:\Users\Thinkpad\AppData\Local\Programs\Python\Python310\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_utils.py", line 88, in collapse_excgroups
+    raise exc
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    response = await self.dispatch_func(request, call_next)
+  File "D:\Project\Automated_Testing_FastApi\main.py", line 27, in db_session_middleware
+    response = await call_next(request)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    raise app_exc
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 55, in wrapped_app
+    raise exc
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 44, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 746, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 75, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 55, in wrapped_app
+    raise exc
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 44, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 70, in app
+    response = await func(request)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 299, in app
+    raise e
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 294, in app
+    raw_response = await run_endpoint_function(
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\concurrency.py", line 35, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 2134, in run_sync_in_worker_thread
+    return await future
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 851, in run
+    result = context.run(func, *args)
+  File "D:\Project\Automated_Testing_FastApi\routers\Project.py", line 33, in create_projects
+    db_project = update_project(db,project)
+  File "D:\Project\Automated_Testing_FastApi\model\curd.py", line 45, in update_project
+    db_project = db.query(models.Project).filter_by(id=project.id).first()
+AttributeError: 'APIRouter' object has no attribute 'id'
+[2023-12-29 15:29:41] INFO uvicorn.error shutdown() L264  call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\server.py L264  in server: Shutting down
+[2023-12-29 15:29:41] INFO uvicorn.error shutdown() L65   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L65   in on: Waiting for application shutdown.
+[2023-12-29 15:29:41] INFO uvicorn.error shutdown() L76   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L76   in on: Application shutdown complete.
+[2023-12-29 15:29:41] INFO uvicorn.error serve() L86   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\server.py L86   in server: Finished server process [23276]
+[2023-12-29 15:29:45] INFO uvicorn.error serve() L76   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\server.py L76   in server: Started server process [2316]
+[2023-12-29 15:29:45] INFO uvicorn.error startup() L46   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L46   in on: Waiting for application startup.
+[2023-12-29 15:29:45] INFO uvicorn.error startup() L60   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L60   in on: Application startup complete.
+[2023-12-29 15:30:13] ERROR uvicorn.error run_asgi() L431  call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py L431  in httptools_impl: Exception in ASGI application
+  + Exception Group Traceback (most recent call last):
+  |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_utils.py", line 82, in collapse_excgroups
+  |     yield
+  |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 190, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 678, in __aexit__
+  |     raise BaseExceptionGroup(
+  | exceptiongroup.ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 426, in run_asgi
+    |     result = await app(  # type: ignore[func-returns-value]
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 84, in __call__
+    |     return await self.app(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    |     await super().__call__(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\applications.py", line 116, in __call__
+    |     await self.middleware_stack(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    |     raise exc
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    |     await self.app(scope, receive, _send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\cors.py", line 91, in __call__
+    |     await self.simple_response(scope, receive, send, request_headers=headers)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\cors.py", line 146, in simple_response
+    |     await self.app(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 189, in __call__
+    |     with collapse_excgroups():
+    |   File "C:\Users\Thinkpad\AppData\Local\Programs\Python\Python310\lib\contextlib.py", line 153, in __exit__
+    |     self.gen.throw(typ, value, traceback)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_utils.py", line 88, in collapse_excgroups
+    |     raise exc
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |   File "D:\Project\Automated_Testing_FastApi\main.py", line 27, in db_session_middleware
+    |     response = await call_next(request)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    |     raise app_exc
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 55, in wrapped_app
+    |     raise exc
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 44, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 746, in __call__
+    |     await route.handle(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 288, in handle
+    |     await self.app(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 75, in app
+    |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 55, in wrapped_app
+    |     raise exc
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 44, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 70, in app
+    |     response = await func(request)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 299, in app
+    |     raise e
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 294, in app
+    |     raw_response = await run_endpoint_function(
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 193, in run_endpoint_function
+    |     return await run_in_threadpool(dependant.call, **values)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\concurrency.py", line 35, in run_in_threadpool
+    |     return await anyio.to_thread.run_sync(func, *args)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    |     return await get_async_backend().run_sync_in_worker_thread(
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 2134, in run_sync_in_worker_thread
+    |     return await future
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 851, in run
+    |     result = context.run(func, *args)
+    |   File "D:\Project\Automated_Testing_FastApi\routers\Project.py", line 33, in create_projects
+    |     db_project = update_project(db,project)
+    |   File "D:\Project\Automated_Testing_FastApi\model\curd.py", line 45, in update_project
+    |     db_project = db.query(models.Project).filter(id=project.id).first()
+    | AttributeError: 'APIRouter' object has no attribute 'id'
+    +------------------------------------
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 426, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\applications.py", line 116, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\cors.py", line 146, in simple_response
+    await self.app(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 189, in __call__
+    with collapse_excgroups():
+  File "C:\Users\Thinkpad\AppData\Local\Programs\Python\Python310\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_utils.py", line 88, in collapse_excgroups
+    raise exc
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    response = await self.dispatch_func(request, call_next)
+  File "D:\Project\Automated_Testing_FastApi\main.py", line 27, in db_session_middleware
+    response = await call_next(request)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    raise app_exc
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 55, in wrapped_app
+    raise exc
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 44, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 746, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 75, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 55, in wrapped_app
+    raise exc
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 44, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 70, in app
+    response = await func(request)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 299, in app
+    raise e
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 294, in app
+    raw_response = await run_endpoint_function(
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\concurrency.py", line 35, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 2134, in run_sync_in_worker_thread
+    return await future
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 851, in run
+    result = context.run(func, *args)
+  File "D:\Project\Automated_Testing_FastApi\routers\Project.py", line 33, in create_projects
+    db_project = update_project(db,project)
+  File "D:\Project\Automated_Testing_FastApi\model\curd.py", line 45, in update_project
+    db_project = db.query(models.Project).filter(id=project.id).first()
+AttributeError: 'APIRouter' object has no attribute 'id'
+[2023-12-29 15:30:13] ERROR uvicorn.error run_asgi() L431  call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py L431  in httptools_impl: Exception in ASGI application
+  + Exception Group Traceback (most recent call last):
+  |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_utils.py", line 82, in collapse_excgroups
+  |     yield
+  |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 190, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 678, in __aexit__
+  |     raise BaseExceptionGroup(
+  | exceptiongroup.ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 426, in run_asgi
+    |     result = await app(  # type: ignore[func-returns-value]
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 84, in __call__
+    |     return await self.app(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    |     await super().__call__(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\applications.py", line 116, in __call__
+    |     await self.middleware_stack(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    |     raise exc
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    |     await self.app(scope, receive, _send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\cors.py", line 91, in __call__
+    |     await self.simple_response(scope, receive, send, request_headers=headers)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\cors.py", line 146, in simple_response
+    |     await self.app(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 189, in __call__
+    |     with collapse_excgroups():
+    |   File "C:\Users\Thinkpad\AppData\Local\Programs\Python\Python310\lib\contextlib.py", line 153, in __exit__
+    |     self.gen.throw(typ, value, traceback)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_utils.py", line 88, in collapse_excgroups
+    |     raise exc
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |   File "D:\Project\Automated_Testing_FastApi\main.py", line 27, in db_session_middleware
+    |     response = await call_next(request)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    |     raise app_exc
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 55, in wrapped_app
+    |     raise exc
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 44, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 746, in __call__
+    |     await route.handle(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 288, in handle
+    |     await self.app(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 75, in app
+    |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 55, in wrapped_app
+    |     raise exc
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 44, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 70, in app
+    |     response = await func(request)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 299, in app
+    |     raise e
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 294, in app
+    |     raw_response = await run_endpoint_function(
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 193, in run_endpoint_function
+    |     return await run_in_threadpool(dependant.call, **values)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\concurrency.py", line 35, in run_in_threadpool
+    |     return await anyio.to_thread.run_sync(func, *args)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    |     return await get_async_backend().run_sync_in_worker_thread(
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 2134, in run_sync_in_worker_thread
+    |     return await future
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 851, in run
+    |     result = context.run(func, *args)
+    |   File "D:\Project\Automated_Testing_FastApi\routers\Project.py", line 33, in create_projects
+    |     db_project = update_project(db,project)
+    |   File "D:\Project\Automated_Testing_FastApi\model\curd.py", line 45, in update_project
+    |     db_project = db.query(models.Project).filter(id=project.id).first()
+    | AttributeError: 'APIRouter' object has no attribute 'id'
+    +------------------------------------
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 426, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\applications.py", line 116, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\cors.py", line 146, in simple_response
+    await self.app(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 189, in __call__
+    with collapse_excgroups():
+  File "C:\Users\Thinkpad\AppData\Local\Programs\Python\Python310\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_utils.py", line 88, in collapse_excgroups
+    raise exc
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    response = await self.dispatch_func(request, call_next)
+  File "D:\Project\Automated_Testing_FastApi\main.py", line 27, in db_session_middleware
+    response = await call_next(request)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    raise app_exc
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 55, in wrapped_app
+    raise exc
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 44, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 746, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 75, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 55, in wrapped_app
+    raise exc
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 44, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 70, in app
+    response = await func(request)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 299, in app
+    raise e
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 294, in app
+    raw_response = await run_endpoint_function(
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\concurrency.py", line 35, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 2134, in run_sync_in_worker_thread
+    return await future
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 851, in run
+    result = context.run(func, *args)
+  File "D:\Project\Automated_Testing_FastApi\routers\Project.py", line 33, in create_projects
+    db_project = update_project(db,project)
+  File "D:\Project\Automated_Testing_FastApi\model\curd.py", line 45, in update_project
+    db_project = db.query(models.Project).filter(id=project.id).first()
+AttributeError: 'APIRouter' object has no attribute 'id'
+[2023-12-29 15:39:34] INFO uvicorn.error shutdown() L264  call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\server.py L264  in server: Shutting down
+[2023-12-29 15:39:37] INFO uvicorn.error serve() L76   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\server.py L76   in server: Started server process [24376]
+[2023-12-29 15:39:37] INFO uvicorn.error startup() L46   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L46   in on: Waiting for application startup.
+[2023-12-29 15:39:37] INFO uvicorn.error startup() L60   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L60   in on: Application startup complete.
+[2023-12-29 15:40:05] ERROR uvicorn.error run_asgi() L431  call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py L431  in httptools_impl: Exception in ASGI application
+  + Exception Group Traceback (most recent call last):
+  |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_utils.py", line 82, in collapse_excgroups
+  |     yield
+  |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 190, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 678, in __aexit__
+  |     raise BaseExceptionGroup(
+  | exceptiongroup.ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 426, in run_asgi
+    |     result = await app(  # type: ignore[func-returns-value]
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 84, in __call__
+    |     return await self.app(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    |     await super().__call__(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\applications.py", line 116, in __call__
+    |     await self.middleware_stack(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    |     raise exc
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    |     await self.app(scope, receive, _send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\cors.py", line 91, in __call__
+    |     await self.simple_response(scope, receive, send, request_headers=headers)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\cors.py", line 146, in simple_response
+    |     await self.app(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 189, in __call__
+    |     with collapse_excgroups():
+    |   File "C:\Users\Thinkpad\AppData\Local\Programs\Python\Python310\lib\contextlib.py", line 153, in __exit__
+    |     self.gen.throw(typ, value, traceback)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_utils.py", line 88, in collapse_excgroups
+    |     raise exc
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |   File "D:\Project\Automated_Testing_FastApi\main.py", line 27, in db_session_middleware
+    |     response = await call_next(request)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    |     raise app_exc
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 55, in wrapped_app
+    |     raise exc
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 44, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 746, in __call__
+    |     await route.handle(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 288, in handle
+    |     await self.app(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 75, in app
+    |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 55, in wrapped_app
+    |     raise exc
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 44, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 70, in app
+    |     response = await func(request)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 299, in app
+    |     raise e
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 294, in app
+    |     raw_response = await run_endpoint_function(
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 193, in run_endpoint_function
+    |     return await run_in_threadpool(dependant.call, **values)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\concurrency.py", line 35, in run_in_threadpool
+    |     return await anyio.to_thread.run_sync(func, *args)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    |     return await get_async_backend().run_sync_in_worker_thread(
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 2134, in run_sync_in_worker_thread
+    |     return await future
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 851, in run
+    |     result = context.run(func, *args)
+    |   File "D:\Project\Automated_Testing_FastApi\routers\Project.py", line 33, in create_projects
+    |     db_project = update_project(db,project)
+    |   File "D:\Project\Automated_Testing_FastApi\model\curd.py", line 44, in update_project
+    |     db_project = db.query(models.Project).filter_by(id=project_update.id).first()
+    | AttributeError: 'APIRouter' object has no attribute 'id'
+    +------------------------------------
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 426, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\applications.py", line 116, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\cors.py", line 146, in simple_response
+    await self.app(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 189, in __call__
+    with collapse_excgroups():
+  File "C:\Users\Thinkpad\AppData\Local\Programs\Python\Python310\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_utils.py", line 88, in collapse_excgroups
+    raise exc
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    response = await self.dispatch_func(request, call_next)
+  File "D:\Project\Automated_Testing_FastApi\main.py", line 27, in db_session_middleware
+    response = await call_next(request)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    raise app_exc
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 55, in wrapped_app
+    raise exc
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 44, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 746, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 75, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 55, in wrapped_app
+    raise exc
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 44, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 70, in app
+    response = await func(request)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 299, in app
+    raise e
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 294, in app
+    raw_response = await run_endpoint_function(
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\concurrency.py", line 35, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 2134, in run_sync_in_worker_thread
+    return await future
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 851, in run
+    result = context.run(func, *args)
+  File "D:\Project\Automated_Testing_FastApi\routers\Project.py", line 33, in create_projects
+    db_project = update_project(db,project)
+  File "D:\Project\Automated_Testing_FastApi\model\curd.py", line 44, in update_project
+    db_project = db.query(models.Project).filter_by(id=project_update.id).first()
+AttributeError: 'APIRouter' object has no attribute 'id'
+[2023-12-29 15:41:27] INFO uvicorn.error shutdown() L264  call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\server.py L264  in server: Shutting down
+[2023-12-29 15:41:29] INFO uvicorn.error serve() L76   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\server.py L76   in server: Started server process [10548]
+[2023-12-29 15:41:29] INFO uvicorn.error startup() L46   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L46   in on: Waiting for application startup.
+[2023-12-29 15:41:29] INFO uvicorn.error startup() L60   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L60   in on: Application startup complete.
+[2023-12-29 15:41:32] ERROR uvicorn.error run_asgi() L431  call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py L431  in httptools_impl: Exception in ASGI application
+  + Exception Group Traceback (most recent call last):
+  |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_utils.py", line 82, in collapse_excgroups
+  |     yield
+  |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 190, in __call__
+  |     async with anyio.create_task_group() as task_group:
+  |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 678, in __aexit__
+  |     raise BaseExceptionGroup(
+  | exceptiongroup.ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+  +-+---------------- 1 ----------------
+    | Traceback (most recent call last):
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 426, in run_asgi
+    |     result = await app(  # type: ignore[func-returns-value]
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 84, in __call__
+    |     return await self.app(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    |     await super().__call__(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\applications.py", line 116, in __call__
+    |     await self.middleware_stack(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    |     raise exc
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    |     await self.app(scope, receive, _send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\cors.py", line 91, in __call__
+    |     await self.simple_response(scope, receive, send, request_headers=headers)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\cors.py", line 146, in simple_response
+    |     await self.app(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 189, in __call__
+    |     with collapse_excgroups():
+    |   File "C:\Users\Thinkpad\AppData\Local\Programs\Python\Python310\lib\contextlib.py", line 153, in __exit__
+    |     self.gen.throw(typ, value, traceback)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_utils.py", line 88, in collapse_excgroups
+    |     raise exc
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    |     response = await self.dispatch_func(request, call_next)
+    |   File "D:\Project\Automated_Testing_FastApi\main.py", line 27, in db_session_middleware
+    |     response = await call_next(request)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    |     raise app_exc
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    |     await self.app(scope, receive_or_disconnect, send_no_error)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 55, in wrapped_app
+    |     raise exc
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 44, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 746, in __call__
+    |     await route.handle(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 288, in handle
+    |     await self.app(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 75, in app
+    |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 55, in wrapped_app
+    |     raise exc
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 44, in wrapped_app
+    |     await app(scope, receive, sender)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 70, in app
+    |     response = await func(request)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 299, in app
+    |     raise e
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 294, in app
+    |     raw_response = await run_endpoint_function(
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 193, in run_endpoint_function
+    |     return await run_in_threadpool(dependant.call, **values)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\concurrency.py", line 35, in run_in_threadpool
+    |     return await anyio.to_thread.run_sync(func, *args)
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    |     return await get_async_backend().run_sync_in_worker_thread(
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 2134, in run_sync_in_worker_thread
+    |     return await future
+    |   File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 851, in run
+    |     result = context.run(func, *args)
+    |   File "D:\Project\Automated_Testing_FastApi\routers\Project.py", line 33, in create_projects
+    |     db_project = update_project(db,project)
+    |   File "D:\Project\Automated_Testing_FastApi\model\curd.py", line 44, in update_project
+    |     db_project = db.query(models.Project).filter_by(id=project_update.id).first()
+    | AttributeError: 'APIRouter' object has no attribute 'id'
+    +------------------------------------
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\protocols\http\httptools_impl.py", line 426, in run_asgi
+    result = await app(  # type: ignore[func-returns-value]
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\middleware\proxy_headers.py", line 84, in __call__
+    return await self.app(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\applications.py", line 1054, in __call__
+    await super().__call__(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\applications.py", line 116, in __call__
+    await self.middleware_stack(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\errors.py", line 186, in __call__
+    raise exc
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\errors.py", line 164, in __call__
+    await self.app(scope, receive, _send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\cors.py", line 91, in __call__
+    await self.simple_response(scope, receive, send, request_headers=headers)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\cors.py", line 146, in simple_response
+    await self.app(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 189, in __call__
+    with collapse_excgroups():
+  File "C:\Users\Thinkpad\AppData\Local\Programs\Python\Python310\lib\contextlib.py", line 153, in __exit__
+    self.gen.throw(typ, value, traceback)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_utils.py", line 88, in collapse_excgroups
+    raise exc
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 191, in __call__
+    response = await self.dispatch_func(request, call_next)
+  File "D:\Project\Automated_Testing_FastApi\main.py", line 27, in db_session_middleware
+    response = await call_next(request)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 165, in call_next
+    raise app_exc
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\base.py", line 151, in coro
+    await self.app(scope, receive_or_disconnect, send_no_error)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\middleware\exceptions.py", line 62, in __call__
+    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 55, in wrapped_app
+    raise exc
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 44, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 746, in __call__
+    await route.handle(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 288, in handle
+    await self.app(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 75, in app
+    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 55, in wrapped_app
+    raise exc
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\_exception_handler.py", line 44, in wrapped_app
+    await app(scope, receive, sender)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\routing.py", line 70, in app
+    response = await func(request)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 299, in app
+    raise e
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 294, in app
+    raw_response = await run_endpoint_function(
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\fastapi\routing.py", line 193, in run_endpoint_function
+    return await run_in_threadpool(dependant.call, **values)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\starlette\concurrency.py", line 35, in run_in_threadpool
+    return await anyio.to_thread.run_sync(func, *args)
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\to_thread.py", line 56, in run_sync
+    return await get_async_backend().run_sync_in_worker_thread(
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 2134, in run_sync_in_worker_thread
+    return await future
+  File "D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\anyio\_backends\_asyncio.py", line 851, in run
+    result = context.run(func, *args)
+  File "D:\Project\Automated_Testing_FastApi\routers\Project.py", line 33, in create_projects
+    db_project = update_project(db,project)
+  File "D:\Project\Automated_Testing_FastApi\model\curd.py", line 44, in update_project
+    db_project = db.query(models.Project).filter_by(id=project_update.id).first()
+AttributeError: 'APIRouter' object has no attribute 'id'
+[2023-12-29 15:42:05] INFO uvicorn.error shutdown() L264  call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\server.py L264  in server: Shutting down
+[2023-12-29 15:42:08] INFO uvicorn.error serve() L76   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\server.py L76   in server: Started server process [24112]
+[2023-12-29 15:42:08] INFO uvicorn.error startup() L46   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L46   in on: Waiting for application startup.
+[2023-12-29 15:42:08] INFO uvicorn.error startup() L60   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L60   in on: Application startup complete.
+[2023-12-29 15:45:24] INFO uvicorn.error shutdown() L264  call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\server.py L264  in server: Shutting down
+[2023-12-29 15:45:28] INFO uvicorn.error serve() L76   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\server.py L76   in server: Started server process [19560]
+[2023-12-29 15:45:28] INFO uvicorn.error startup() L46   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L46   in on: Waiting for application startup.
+[2023-12-29 15:45:28] INFO uvicorn.error startup() L60   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L60   in on: Application startup complete.
+[2023-12-29 15:46:28] INFO uvicorn.error shutdown() L264  call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\server.py L264  in server: Shutting down
+[2023-12-29 15:46:31] INFO uvicorn.error serve() L76   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\server.py L76   in server: Started server process [884]
+[2023-12-29 15:46:31] INFO uvicorn.error startup() L46   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L46   in on: Waiting for application startup.
+[2023-12-29 15:46:31] INFO uvicorn.error startup() L60   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L60   in on: Application startup complete.
+[2023-12-29 15:50:55] INFO uvicorn.error shutdown() L264  call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\server.py L264  in server: Shutting down
+[2023-12-29 15:50:55] INFO uvicorn.error shutdown() L65   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L65   in on: Waiting for application shutdown.
+[2023-12-29 15:50:55] INFO uvicorn.error shutdown() L76   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L76   in on: Application shutdown complete.
+[2023-12-29 15:50:55] INFO uvicorn.error serve() L86   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\server.py L86   in server: Finished server process [884]
+[2023-12-29 15:51:03] INFO uvicorn.error serve() L76   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\server.py L76   in server: Started server process [22784]
+[2023-12-29 15:51:03] INFO uvicorn.error startup() L46   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L46   in on: Waiting for application startup.
+[2023-12-29 15:51:03] INFO uvicorn.error startup() L60   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L60   in on: Application startup complete.
+[2023-12-29 15:53:15] INFO uvicorn.error shutdown() L264  call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\server.py L264  in server: Shutting down
+[2023-12-29 15:53:15] INFO uvicorn.error shutdown() L65   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L65   in on: Waiting for application shutdown.
+[2023-12-29 15:53:15] INFO uvicorn.error shutdown() L76   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L76   in on: Application shutdown complete.
+[2023-12-29 15:53:15] INFO uvicorn.error serve() L86   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\server.py L86   in server: Finished server process [22784]
+[2023-12-29 15:53:19] INFO uvicorn.error serve() L76   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\server.py L76   in server: Started server process [11276]
+[2023-12-29 15:53:19] INFO uvicorn.error startup() L46   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L46   in on: Waiting for application startup.
+[2023-12-29 15:53:19] INFO uvicorn.error startup() L60   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L60   in on: Application startup complete.

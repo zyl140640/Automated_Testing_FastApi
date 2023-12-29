@@ -37,3 +37,30 @@ def create_project(db: Session, project: schemas.ProjectCreate):
     db.commit()
     db.refresh(db_project)  # 可选步骤：如果需要在后续操作中使用到刚刚添加的项目的其他属性，可以保留这行代码
     return db_project
+
+
+# 根据ID修改项目
+def update_project(db: Session, project_update: schemas.ProjectUpdate):
+    db_project = db.query(models.Project).filter_by(id=project_update.id).first()
+    if db_project:
+        # 确保在schemas.ProjectUpdate中的属性与数据库模型models.Project中的字段相对应
+        for attr, value in project_update.dict(exclude_unset=True).items():
+            setattr(db_project, attr, value)
+        try:
+            db.flush()  # 刷新数据库会话以提交当前事务并开始一个新的
+            db.commit()
+            db.refresh(db_project)  # 刷新数据库会话以反映更改
+            return db_project
+        except Exception as e:
+            db.rollback()  # 在发生异常时回滚事务
+            print(f"更新项目时发生错误: {e}")
+    return None
+
+
+def delete_project(db: Session, project_id: int):
+    db_project = db.query(models.Project).filter_by(id=project_id).first()
+    if db_project:
+        db.delete(db_project)
+        db.commit()
+        return True
+    return False
