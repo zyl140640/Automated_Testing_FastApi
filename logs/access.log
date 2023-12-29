@@ -1,0 +1,15 @@
+[2023-12-28 23:34:52] INFO uvicorn.access send() L478  in h11_impl: 127.0.0.1:59413 - "GET /docs HTTP/1.1" 200
+[2023-12-28 23:34:52] INFO uvicorn.access send() L478  in h11_impl: 127.0.0.1:59413 - "GET /openapi.json HTTP/1.1" 200
+[2023-12-28 23:34:53] INFO uvicorn.access send() L478  in h11_impl: 127.0.0.1:59413 - "GET /docs HTTP/1.1" 200
+[2023-12-28 23:34:53] INFO uvicorn.access send() L478  in h11_impl: 127.0.0.1:59413 - "GET /openapi.json HTTP/1.1" 200
+[2023-12-28 23:35:06] INFO uvicorn.access send() L478  in h11_impl: 127.0.0.1:59414 - "POST /sign_in HTTP/1.1" 200
+[2023-12-28 23:35:09] INFO uvicorn.access send() L478  in h11_impl: 127.0.0.1:59414 - "POST /sign_in HTTP/1.1" 200
+[2023-12-29 08:47:51] INFO watchfiles.main _log_changes() L297  in main: 4 changes detected
+[2023-12-29 08:48:09] INFO watchfiles.main _log_changes() L297  in main: 1 change detected
+[2023-12-29 08:48:09] INFO watchfiles.main _log_changes() L297  in main: 1 change detected
+[2023-12-29 08:48:19] INFO watchfiles.main _log_changes() L297  in main: 1 change detected
+[2023-12-29 08:48:48] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:63796 - "GET /docs HTTP/1.1" 200
+[2023-12-29 08:48:48] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:63796 - "GET /openapi.json HTTP/1.1" 200
+[2023-12-29 08:48:57] INFO watchfiles.main _log_changes() L297  in main: 1 change detected
+[2023-12-29 08:49:32] INFO watchfiles.main _log_changes() L297  in main: 7 changes detected
+[2023-12-29 08:49:34] INFO watchfiles.main _log_changes() L297  in main: 1 change detected

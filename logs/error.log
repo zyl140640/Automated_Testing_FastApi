@@ -1,0 +1,7 @@
+[2023-12-28 23:34:35] INFO uvicorn.error serve() L76   call_trace=E:\¸´Ï°\fastApiProject\venv\lib\site-packages\uvicorn\server.py L76   in server: Started server process [14032]
+[2023-12-28 23:34:35] INFO uvicorn.error startup() L46   call_trace=E:\¸´Ï°\fastApiProject\venv\lib\site-packages\uvicorn\lifespan\on.py L46   in on: Waiting for application startup.
+[2023-12-28 23:34:35] INFO uvicorn.error startup() L60   call_trace=E:\¸´Ï°\fastApiProject\venv\lib\site-packages\uvicorn\lifespan\on.py L60   in on: Application startup complete.
+[2023-12-28 23:37:08] INFO uvicorn.error shutdown() L264  call_trace=E:\¸´Ï°\fastApiProject\venv\lib\site-packages\uvicorn\server.py L264  in server: Shutting down
+[2023-12-29 08:47:51] INFO uvicorn.error serve() L76   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\server.py L76   in server: Started server process [2600]
+[2023-12-29 08:47:51] INFO uvicorn.error startup() L46   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L46   in on: Waiting for application startup.
+[2023-12-29 08:47:51] INFO uvicorn.error startup() L60   call_trace=D:\Project\Automated_Testing_FastApi\.venv\lib\site-packages\uvicorn\lifespan\on.py L60   in on: Application startup complete.
