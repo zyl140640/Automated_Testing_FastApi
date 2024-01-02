@@ -373,3 +373,128 @@
 [2023-12-29 15:56:08] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.182:51154 - "GET /project/list HTTP/1.1" 200
 [2023-12-29 15:56:10] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.182:51154 - "GET /project/list HTTP/1.1" 200
 [2023-12-29 16:02:48] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:62727 - "GET /project/list HTTP/1.1" 200
+[2023-12-29 16:04:01] INFO watchfiles.main _log_changes() L297  in main: 60 changes detected
+[2023-12-29 16:04:23] INFO watchfiles.main _log_changes() L297  in main: 5 changes detected
+[2023-12-29 16:04:26] INFO watchfiles.main _log_changes() L297  in main: 1 change detected
+[2023-12-29 16:04:27] INFO watchfiles.main _log_changes() L297  in main: 7 changes detected
+[2023-12-29 16:04:31] INFO watchfiles.main _log_changes() L297  in main: 15 changes detected
+[2023-12-29 16:04:32] INFO watchfiles.main _log_changes() L297  in main: 1 change detected
+[2023-12-29 16:04:34] INFO watchfiles.main _log_changes() L297  in main: 1 change detected
+[2023-12-29 16:04:35] INFO watchfiles.main _log_changes() L297  in main: 1 change detected
+[2023-12-29 16:07:40] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:63110 - "GET /project/list HTTP/1.1" 200
+[2023-12-29 16:08:23] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:63145 - "GET /project/list HTTP/1.1" 200
+[2023-12-29 16:08:29] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:63154 - "GET /project/list HTTP/1.1" 200
+[2023-12-29 16:09:44] INFO watchfiles.main _log_changes() L297  in main: 1 change detected
+[2023-12-29 16:10:06] INFO watchfiles.main _log_changes() L297  in main: 7 changes detected
+[2023-12-29 16:11:10] INFO watchfiles.main _log_changes() L297  in main: 2 changes detected
+[2023-12-29 16:11:17] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:63406 - "GET /project/list HTTP/1.1" 200
+[2023-12-29 16:11:23] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:63420 - "GET /project/list HTTP/1.1" 200
+[2023-12-29 16:14:18] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:63640 - "GET /project/list HTTP/1.1" 200
+[2023-12-29 16:14:32] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:63671 - "GET /project/list HTTP/1.1" 200
+[2023-12-29 16:17:49] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:63974 - "GET /project/list?yourQueryParam=value HTTP/1.1" 200
+[2023-12-29 16:18:05] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:64005 - "GET /project/list?yourQueryParam=value HTTP/1.1" 200
+[2023-12-29 16:23:03] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:64423 - "GET /project/list?yourQueryParam=value HTTP/1.1" 200
+[2023-12-29 16:24:12] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:64510 - "GET /project/list?yourQueryParam=value HTTP/1.1" 200
+[2023-12-29 16:25:24] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:64623 - "GET /project/list?yourQueryParam=value HTTP/1.1" 200
+[2023-12-29 16:28:27] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:64846 - "GET /project/list?yourQueryParam=value HTTP/1.1" 200
+[2023-12-29 16:29:55] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:64970 - "GET /project/list?yourQueryParam=value HTTP/1.1" 200
+[2023-12-29 16:32:57] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:65220 - "GET /project/list?yourQueryParam=value HTTP/1.1" 200
+[2023-12-29 16:34:05] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:65302 - "GET /project/list?yourQueryParam=value HTTP/1.1" 200
+[2023-12-29 16:35:16] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:65409 - "GET /project/list?yourQueryParam=value HTTP/1.1" 200
+[2023-12-29 16:36:39] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:65517 - "GET /project/list?yourQueryParam=value HTTP/1.1" 200
+[2023-12-29 16:36:43] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:65517 - "GET /project/list?yourQueryParam=value HTTP/1.1" 200
+[2023-12-29 16:38:02] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:49264 - "GET /project/list?yourQueryParam=value HTTP/1.1" 200
+[2023-12-29 16:38:13] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:49290 - "GET /project/list?yourQueryParam=value HTTP/1.1" 200
+[2023-12-29 16:39:24] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:49367 - "GET /project/list?yourQueryParam=value HTTP/1.1" 200
+[2023-12-29 16:39:30] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:49394 - "GET /project/list?yourQueryParam=value HTTP/1.1" 200
+[2023-12-29 16:40:03] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:49702 - "GET /project/list?yourQueryParam=value HTTP/1.1" 200
+[2023-12-29 16:40:16] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:49736 - "GET /project/list?yourQueryParam=value HTTP/1.1" 200
+[2023-12-29 16:50:17] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:51362 - "GET /project/list?yourQueryParam=value HTTP/1.1" 200
+[2023-12-29 16:51:41] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:51425 - "GET /project/list?yourQueryParam=value HTTP/1.1" 200
+[2023-12-29 16:51:44] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:51425 - "GET /project/list?yourQueryParam=value HTTP/1.1" 200
+[2023-12-29 16:53:28] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:51519 - "GET /project/list?yourQueryParam=value HTTP/1.1" 200
+[2023-12-29 16:54:14] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:51555 - "GET /project/list?yourQueryParam=value HTTP/1.1" 200
+[2023-12-29 16:54:16] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:51555 - "GET /project/list?yourQueryParam=value HTTP/1.1" 200
+[2023-12-29 16:56:43] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:51691 - "GET /project/list?yourQueryParam=value HTTP/1.1" 200
+[2023-12-29 16:56:47] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:51691 - "GET /project/list?yourQueryParam=value HTTP/1.1" 200
+[2023-12-29 16:57:13] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:51718 - "GET /project/list?yourQueryParam=value HTTP/1.1" 200
+[2023-12-29 16:58:07] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:51754 - "GET /project/list?yourQueryParam=value HTTP/1.1" 200
+[2023-12-29 16:58:49] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:51785 - "GET /project/list?yourQueryParam=value HTTP/1.1" 200
+[2023-12-29 16:58:50] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:51785 - "GET /project/list?yourQueryParam=value HTTP/1.1" 200
+[2023-12-29 17:00:55] INFO watchfiles.main _log_changes() L297  in main: 1 change detected
+[2024-01-02 08:54:29] INFO watchfiles.main _log_changes() L297  in main: 7 changes detected
+[2024-01-02 08:54:46] INFO watchfiles.main _log_changes() L297  in main: 1 change detected
+[2024-01-02 08:54:52] INFO uvicorn.access send() L496  in httptools_impl: 127.0.0.1:59833 - "GET / HTTP/1.1" 200
+[2024-01-02 08:54:53] INFO uvicorn.access send() L496  in httptools_impl: 127.0.0.1:59833 - "GET /favicon.ico HTTP/1.1" 404
+[2024-01-02 08:54:56] INFO uvicorn.access send() L496  in httptools_impl: 127.0.0.1:59849 - "GET /dosc HTTP/1.1" 404
+[2024-01-02 08:54:59] INFO uvicorn.access send() L496  in httptools_impl: 127.0.0.1:59849 - "GET /dosc HTTP/1.1" 404
+[2024-01-02 08:55:03] INFO uvicorn.access send() L496  in httptools_impl: 127.0.0.1:59849 - "GET /docs HTTP/1.1" 200
+[2024-01-02 08:56:29] INFO uvicorn.access send() L496  in httptools_impl: 127.0.0.1:65356 - "GET /docs HTTP/1.1" 200
+[2024-01-02 08:56:52] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:65396 - "GET /docs HTTP/1.1" 200
+[2024-01-02 08:57:06] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:65425 - "GET /docs HTTP/1.1" 200
+[2024-01-02 08:57:06] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:65425 - "GET /openapi.json HTTP/1.1" 200
+[2024-01-02 08:57:15] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:65426 - "GET /project/list HTTP/1.1" 200
+[2024-01-02 08:58:22] INFO watchfiles.main _log_changes() L297  in main: 4 changes detected
+[2024-01-02 08:59:05] INFO watchfiles.main _log_changes() L297  in main: 4 changes detected
+[2024-01-02 08:59:11] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:49237 - "GET /docs HTTP/1.1" 200
+[2024-01-02 08:59:16] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:49252 - "GET /docs HTTP/1.1" 200
+[2024-01-02 08:59:16] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:49252 - "GET /openapi.json HTTP/1.1" 200
+[2024-01-02 08:59:24] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:49279 - "GET /project/list/1 HTTP/1.1" 200
+[2024-01-02 08:59:38] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:49298 - "GET /project/list HTTP/1.1" 200
+[2024-01-02 09:00:17] INFO watchfiles.main _log_changes() L297  in main: 4 changes detected
+[2024-01-02 09:00:19] INFO watchfiles.main _log_changes() L297  in main: 9 changes detected
+[2024-01-02 09:00:19] INFO watchfiles.main _log_changes() L297  in main: 1 change detected
+[2024-01-02 09:00:19] INFO watchfiles.main _log_changes() L297  in main: 6 changes detected
+[2024-01-02 09:00:29] INFO watchfiles.main _log_changes() L297  in main: 2 changes detected
+[2024-01-02 09:00:29] INFO watchfiles.main _log_changes() L297  in main: 1 change detected
+[2024-01-02 09:00:30] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:49396 - "GET /docs HTTP/1.1" 200
+[2024-01-02 09:00:31] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:49396 - "GET /openapi.json HTTP/1.1" 200
+[2024-01-02 09:00:37] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:49671 - "GET /project/list/1 HTTP/1.1" 500
+[2024-01-02 09:00:40] INFO watchfiles.main _log_changes() L297  in main: 1 change detected
+[2024-01-02 09:00:41] INFO watchfiles.main _log_changes() L297  in main: 1 change detected
+[2024-01-02 09:00:52] INFO watchfiles.main _log_changes() L297  in main: 4 changes detected
+[2024-01-02 09:01:03] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:49713 - "GET /openapi.json HTTP/1.1" 200
+[2024-01-02 11:05:24] INFO watchfiles.main _log_changes() L297  in main: 5 changes detected
+[2024-01-02 11:05:55] INFO watchfiles.main _log_changes() L297  in main: 7 changes detected
+[2024-01-02 11:05:56] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:53592 - "GET /docs HTTP/1.1" 200
+[2024-01-02 11:05:57] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:53592 - "GET /openapi.json HTTP/1.1" 200
+[2024-01-02 11:06:06] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:53593 - "GET /projects/projects/ HTTP/1.1" 200
+[2024-01-02 11:06:15] INFO watchfiles.main _log_changes() L297  in main: 8 changes detected
+[2024-01-02 11:06:26] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:53642 - "POST /projects/projects/ HTTP/1.1" 200
+[2024-01-02 11:06:30] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:53642 - "GET /projects/projects/ HTTP/1.1" 200
+[2024-01-02 11:06:40] INFO watchfiles.main _log_changes() L297  in main: 1 change detected
+[2024-01-02 11:07:05] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:53653 - "GET /projects/projects/1 HTTP/1.1" 200
+[2024-01-02 11:07:37] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:53729 - "PUT /projects/projects/1 HTTP/1.1" 200
+[2024-01-02 11:07:41] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:53729 - "GET /projects/projects/ HTTP/1.1" 200
+[2024-01-02 11:12:06] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:61276 - "GET /docs HTTP/1.1" 200
+[2024-01-02 11:12:06] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:61276 - "GET /openapi.json HTTP/1.1" 200
+[2024-01-02 11:12:06] INFO watchfiles.main _log_changes() L297  in main: 7 changes detected
+[2024-01-02 11:12:06] INFO watchfiles.main _log_changes() L297  in main: 1 change detected
+[2024-01-02 11:12:07] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:61276 - "GET /docs HTTP/1.1" 200
+[2024-01-02 11:12:07] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:61276 - "GET /openapi.json HTTP/1.1" 200
+[2024-01-02 11:12:17] INFO uvicorn.access send() L496  in httptools_impl: 192.168.50.83:58324 - "GET /docs HTTP/1.1" 200
+[2024-01-02 11:12:20] INFO uvicorn.access send() L496  in httptools_impl: 192.168.50.83:58324 - "GET /openapi.json HTTP/1.1" 200
+[2024-01-02 11:12:34] INFO uvicorn.access send() L496  in httptools_impl: 192.168.50.83:58325 - "GET /projects/projects/ HTTP/1.1" 200
+[2024-01-02 11:13:46] INFO uvicorn.access send() L496  in httptools_impl: 192.168.50.83:58364 - "GET /projects/projects/1 HTTP/1.1" 200
+[2024-01-02 11:18:10] INFO watchfiles.main _log_changes() L297  in main: 1 change detected
+[2024-01-02 11:18:11] INFO watchfiles.main _log_changes() L297  in main: 1 change detected
+[2024-01-02 11:18:17] INFO watchfiles.main _log_changes() L297  in main: 7 changes detected
+[2024-01-02 11:18:33] INFO watchfiles.main _log_changes() L297  in main: 1 change detected
+[2024-01-02 11:18:34] INFO watchfiles.main _log_changes() L297  in main: 1 change detected
+[2024-01-02 11:18:54] INFO watchfiles.main _log_changes() L297  in main: 1 change detected
+[2024-01-02 11:19:01] INFO watchfiles.main _log_changes() L297  in main: 11 changes detected
+[2024-01-02 11:19:23] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:61851 - "GET /docs HTTP/1.1" 200
+[2024-01-02 11:19:23] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:61851 - "GET /openapi.json HTTP/1.1" 200
+[2024-01-02 11:20:11] INFO watchfiles.main _log_changes() L297  in main: 3 changes detected
+[2024-01-02 11:22:09] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:62134 - "GET /docs HTTP/1.1" 200
+[2024-01-02 11:22:09] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:62134 - "GET /openapi.json HTTP/1.1" 200
+[2024-01-02 11:22:10] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:62134 - "GET /docs HTTP/1.1" 200
+[2024-01-02 11:22:10] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:62134 - "GET /openapi.json HTTP/1.1" 200
+[2024-01-02 11:22:14] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:62134 - "GET /docs HTTP/1.1" 200
+[2024-01-02 11:22:14] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:62134 - "GET /openapi.json HTTP/1.1" 200
+[2024-01-02 11:22:15] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:62134 - "GET /docs HTTP/1.1" 200
+[2024-01-02 11:22:15] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:62134 - "GET /openapi.json HTTP/1.1" 200
+[2024-01-02 11:22:30] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:62160 - "GET /docs HTTP/1.1" 200
+[2024-01-02 11:22:30] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:62160 - "GET /openapi.json HTTP/1.1" 200
+[2024-01-02 11:22:51] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:62161 - "GET /openapi.json HTTP/1.1" 200
+[2024-01-02 11:22:51] INFO uvicorn.access send() L496  in httptools_impl: 192.168.110.87:62161 - "GET /favicon.ico HTTP/1.1" 404

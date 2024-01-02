@@ -4,3 +4,4 @@ uvicorn
 fastapi
 starlette
 pymysql
+cryptography
