@@ -37,6 +37,10 @@ def update_test_step(test_step_id: int, test_step: schemas.TestStepCreate, db: S
 
 
 # 删除测试步骤接口
-@teststep.delete("/test_steps/{test_step_id}", response_model=schemas.TestStep)
+@teststep.delete("/test_steps/{test_step_id}")
 def delete_test_step(test_step_id: int, db: Session = Depends(get_db)):
-    return curd.delete_test_step(db=db, test_step_id=test_step_id)
+    curd.delete_test_step(db=db, test_step_id=test_step_id)
+    return {
+        "status": "success",
+        "message": "Deleted successfully",
+    }

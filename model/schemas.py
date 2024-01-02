@@ -1,11 +1,9 @@
-# schemas.py  数据校验 用于 请求
-
-
+# schemas.py - 数据校验，用于请求
 from datetime import datetime
+from typing import List
+
 from pydantic import BaseModel
 
-
-# Pydantic模型用于数据验证和序列化
 
 # 项目基础信息
 class ProjectBase(BaseModel):
@@ -31,6 +29,7 @@ class Project(ProjectBase):
 class TestCaseBase(BaseModel):
     name: str  # 测试用例名称
     creator: str  # 测试用例创建人
+    test_report: str  # 测试报告
 
 
 # 用于在创建测试用例时接收数据
@@ -60,7 +59,7 @@ class TestStepBase(BaseModel):
 
 # 用于在创建测试步骤时接收数据
 class TestStepCreate(TestStepBase):
-    test_report: str  # 测试报告存放地址
+    pass
 
 
 # 用于返回测试步骤信息
@@ -68,7 +67,19 @@ class TestStep(TestStepBase):
     id: int  # 测试步骤ID
     test_case_id: int  # 测试用例ID
     creation_time: datetime  # 测试步骤创建时间
-    test_report: str  # 测试报告存放地址
 
     class Config:
         from_attributes = True  # 启用ORM模式，以便支持SQLAlchemy模型
+
+
+# 返回项目下的测试数据
+class ProjectTestCase(ProjectBase):
+    id: int
+    creation_time: datetime
+    test_cases: List[TestCase]
+
+
+class TestCaseTestStep(TestCaseBase):
+    id: int
+    creation_time: datetime
+    test_steps: List[TestStep]

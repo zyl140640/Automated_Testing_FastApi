@@ -6,7 +6,7 @@ from model.database import SessionLocal
 
 
 # Dependency
-def get_db():
+def get_db() -> Session:
     db = SessionLocal()
     try:
         yield db

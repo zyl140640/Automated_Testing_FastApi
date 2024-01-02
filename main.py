@@ -1,8 +1,9 @@
 import logging.config
 import os
+import time
 
 import uvicorn
-from fastapi import FastAPI, Request
+from fastapi import FastAPI, Request, Response
 from starlette.middleware.cors import CORSMiddleware
 
 from model import models
@@ -20,15 +21,26 @@ app = FastAPI(title="Automated_Testing_FastApi", summary="Automated Testing的�
 
 
 # session 中间件
-@app.middleware("http")
-async def db_session_middleware(request: Request, call_next):
-    response = None  # 初始化 response 变量
-    try:
-        request.state.db = SessionLocal()
-        response = await call_next(request)
-    finally:
-        request.state.db.close()
-        return response  # 将 response 返回至上层
+# @app.middleware("http")
+# async def db_session_middleware(request: Request, call_next):
+#     response = Response("Internal server error", status_code=500)
+#     try:
+#         request.state.db = SessionLocal()
+#         response = await call_next(request)
+#     finally:
+#         request.state.db.close()
+#     return response
+#
+#
+# # @app.middleware("http")
+# # async def db_session_middleware(request: Request, call_next):
+# #     response = None  # 初始化 response 变量
+# #     try:
+# #         request.state.db = SessionLocal()
+# #         response = await call_next(request)
+# #     finally:
+# #         request.state.db.close()
+# #         return response  # 将 response 返回至上层
 
 
 # 解决跨域问题允许所有人访问

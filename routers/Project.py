@@ -24,7 +24,7 @@ def read_all_projects(db: Session = Depends(get_db)):
     return curd.get_all_projects(db=db)
 
 
-@project.get("/projects/{project_id}", response_model=schemas.Project)
+@project.get("/projects/{project_id}", response_model=schemas.ProjectTestCase)
 def read_project_with_test_cases(project_id: int, db: Session = Depends(get_db)):
     """
     获取包含测试用例的项目的接口。
@@ -70,7 +70,7 @@ def update_project(project_id: int, renewal_project: schemas.ProjectCreate, db: 
     return curd.update_project(db=db, project_id=project_id, project=renewal_project)
 
 
-@project.delete("/projects/{project_id}", response_model=schemas.Project)
+@project.delete("/projects/{project_id}")
 def delete_project(project_id: int, db: Session = Depends(get_db)):
     """
     删除项目接口。
@@ -79,7 +79,9 @@ def delete_project(project_id: int, db: Session = Depends(get_db)):
         project_id (int): 要删除的项目 ID。
         db (Session): 数据库会话对象。
 
-    Returns:
-        schemas.Project: 删除的项目信息。
     """
-    return curd.delete_project(db=db, project_id=project_id)
+    curd.delete_project(db=db, project_id=project_id)
+    return {
+        "status": "success",
+        "message": "Deleted successfully",
+    }

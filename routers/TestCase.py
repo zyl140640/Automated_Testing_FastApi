@@ -24,7 +24,7 @@ def read_all_test_cases(db: Session = Depends(get_db)):
 
 
 # 获取包含测试步骤的测试用例的接口
-@testcase.get("/test_cases/{test_case_id}", response_model=schemas.TestCase)
+@testcase.get("/test_cases/{test_case_id}", response_model=schemas.TestCaseTestStep)
 def read_test_case_with_steps(test_case_id: int, db: Session = Depends(get_db)):
     """
     获取包含测试步骤的测试用例的接口。
@@ -58,6 +58,10 @@ def update_test_case(test_case_id: int, test_case: schemas.TestCaseCreate, db: S
 
 
 # 删除测试用例接口
-@testcase.delete("/test_cases/{test_case_id}", response_model=schemas.TestCase)
+@testcase.delete("/test_cases/{test_case_id}")
 def delete_test_case(test_case_id: int, db: Session = Depends(get_db)):
-    return curd.delete_test_case(db=db, test_case_id=test_case_id)
+    curd.delete_test_case(db=db, test_case_id=test_case_id)
+    return {
+        "status": "success",
+        "message": "Deleted successfully",
+    }
