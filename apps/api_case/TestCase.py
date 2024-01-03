@@ -3,8 +3,8 @@ from typing import List
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
-from model import schemas, curd
-from model.curd import get_db
+from apps.api_case import schemas, curd
+from depends.session import get_db
 
 testcase = APIRouter()
 
@@ -21,22 +21,6 @@ def read_all_test_cases(db: Session = Depends(get_db)):
         List[schemas.TestCase]: 包含所有测试用例信息的列表。
     """
     return curd.get_all_test_cases(db=db)
-
-
-# 获取包含测试步骤的测试用例的接口
-@testcase.get("/test_cases/{test_case_id}", response_model=schemas.TestCaseTestStep)
-def read_test_case_with_steps(test_case_id: int, db: Session = Depends(get_db)):
-    """
-    获取包含测试步骤的测试用例的接口。
-
-    Args:
-        test_case_id (int): 要查询的测试用例 ID。
-        db (Session): 数据库会话对象。
-
-    Returns:
-        schemas.TestCase: 包含关联测试步骤的测试用例信息。
-    """
-    return curd.get_test_case_with_steps(db=db, test_case_id=test_case_id)
 
 
 # 创建测试用例接口

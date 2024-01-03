@@ -1,37 +1,31 @@
 import logging.config
 import os
-import time
 
 import uvicorn
-from fastapi import FastAPI, Request, Response
+from fastapi import FastAPI
 from starlette.middleware.cors import CORSMiddleware
 
-from model import models
-from model.database import engine, SessionLocal
-from routers.Project import project
-from routers.TestCase import testcase
-from routers.TestStep import teststep
+from apps.api_case.TestCase import testcase
+from apps.api_project import models as project_models
+from apps.api_case import models as case_models
+from apps.api_project.Project import project
+from apps.api_steps import models as steps_models
+from apps.api_steps.TestStep import teststep
 
+from tools.database import engine
+
+# 定义模型列表
+models_list = [project_models, case_models, steps_models]
+# 使用循环创建所有表格
+for models_module in models_list:
+    models_module.Base.metadata.create_all(bind=engine)
 # 配置日志
-models.Base.metadata.create_all(bind=engine)
 logging.config.fileConfig(fname=os.path.join(os.path.dirname(os.path.abspath(__file__)), 'logging.ini'),
                           disable_existing_loggers=False)
 
 app = FastAPI(title="Automated_Testing_FastApi", summary="Automated Testing的后端API接口", version="1.0")
 
-
 # session 中间件
-# @app.middleware("http")
-# async def db_session_middleware(request: Request, call_next):
-#     response = Response("Internal server error", status_code=500)
-#     try:
-#         request.state.db = SessionLocal()
-#         response = await call_next(request)
-#     finally:
-#         request.state.db.close()
-#     return response
-#
-#
 # # @app.middleware("http")
 # # async def db_session_middleware(request: Request, call_next):
 # #     response = None  # 初始化 response 变量

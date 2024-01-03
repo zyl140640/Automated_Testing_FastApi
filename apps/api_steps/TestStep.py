@@ -3,8 +3,8 @@ from typing import List
 from fastapi import APIRouter, Depends
 from sqlalchemy.orm import Session
 
-from model import schemas, curd
-from model.curd import get_db
+from apps.api_steps import schemas, curd
+from depends.session import get_db
 
 teststep = APIRouter()
 

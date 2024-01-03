@@ -2,10 +2,12 @@
 from typing import List
 
 from fastapi import APIRouter, Depends
-from sqlalchemy.orm import Session
+from sqlalchemy.orm import Session, joinedload
 
-from model import schemas, curd
-from model.curd import get_db
+from apps.api_case.models import TestCase
+from apps.api_project import schemas, curd
+from apps.api_project.models import Project
+from depends.session import get_db
 
 project = APIRouter()
 
@@ -24,19 +26,43 @@ def read_all_projects(db: Session = Depends(get_db)):
     return curd.get_all_projects(db=db)
 
 
-@project.get("/projects/{project_id}", response_model=schemas.ProjectTestCase)
-def read_project_with_test_cases(project_id: int, db: Session = Depends(get_db)):
-    """
-    获取包含测试用例的项目的接口。
+# @project.get("/projects/{project_id}", response_model=schemas.ProjectTestCase)
+# def read_project_with_test_cases(project_id: int, db: Session = Depends(get_db)):
+#     """
+#     获取包含测试用例的项目的接口。
+#
+#     Args:
+#         project_id (int): 要查询的项目 ID。
+#         db (Session): 数据库会话对象。
+#
+#     Returns:
+#         schemas.Project: 包含关联测试用例的项目信息。
+#     """
+#     return curd.get_project_with_test_cases(db=db, project_id=project_id)
 
-    Args:
-        project_id (int): 要查询的项目 ID。
-        db (Session): 数据库会话对象。
 
-    Returns:
-        schemas.Project: 包含关联测试用例的项目信息。
+@project.get("/projects/list/{project_id}")
+def get_project_with_test_cases_and_steps(project_id, db: Session = Depends(get_db)):
     """
-    return curd.get_project_with_test_cases(db=db, project_id=project_id)
+        获取包含项目下的测试用例和测试步骤的接口
+
+        Args:
+            project_id : 要查询的项目 ID。
+            db (Session): 数据库会话对象。
+
+        Returns:
+            schemas.Project: 返回包含项目下的测试用例和测试步骤的接口。
+        """
+    # 执行查询函数
+    project_with_test_cases_and_steps = (
+        db.query(Project)
+        .options(
+            joinedload(Project.test_cases).joinedload(TestCase.test_steps)
+        )
+        .filter(Project.id == project_id)
+        .first()
+    )
+    return project_with_test_cases_and_steps
 
 
 @project.post("/projects/", response_model=schemas.Project)
